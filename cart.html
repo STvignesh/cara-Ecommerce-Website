@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cara</title>
+
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="cart.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="#"><img src="img/logo.png" alt="Cara logo" class="logo" /></a>
+      <div>
+        <ul id="navbar" class="active-mobile-nav">
+          <li><a class="nav-link" href="index.html">Home</a></li>
+          <li><a href="shop.html" class="nav-link">Shop</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li>
+            <a href="cart.html" class="active"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="nav-icon"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+                />
+              </svg>
+            </a>
+          </li>
+          <a href="#" id="close"
+            ><ion-icon name="close-outline" class="icon-close"></ion-icon
+          ></a>
+        </ul>
+      </div>
+
+      <div id="mobile">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="nav-icon"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+          />
+        </svg>
+        <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
+      </div>
+    </section>
+
+    <section id="cartHeader">
+      <h2>CART</h2>
+
+      <p>Stack your Favourite</p>
+    </section>
+
+    <section id="cart" class="section-p1">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Remove</td>
+            <td>Image</td>
+            <td>Product</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Sub Total</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <ion-icon
+                name="close-circle-outline"
+                class="remove-icon"
+              ></ion-icon>
+            </td>
+            <td><img src="img/products/n1.jpg" alt="shirt picture" /></td>
+            <td>Men Solid Blue Shirt</td>
+            <td>₹2300</td>
+            <td><input type="number" min="1" value="1" /></td>
+            <td>₹2300</td>
+          </tr>
+          <tr>
+            <td>
+              <ion-icon
+                name="close-circle-outline"
+                class="remove-icon"
+              ></ion-icon>
+            </td>
+            <td><img src="img/products/n2.jpg" alt="shirt picture" /></td>
+            <td>Men Grey Checked Shirt</td>
+            <td>₹1899</td>
+            <td><input type="number" min="1" value="1" /></td>
+            <td>₹1899</td>
+          </tr>
+          <tr>
+            <td>
+              <ion-icon
+                name="close-circle-outline"
+                class="remove-icon"
+              ></ion-icon>
+            </td>
+            <td><img src="img/products/n3.jpg" alt="shirt picture" /></td>
+            <td>Men Solid White Shirt</td>
+            <td>₹2600</td>
+            <td><input type="number" min="1" value="1" /></td>
+            <td>₹2600</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="cart-add" class="section-p1">
+      <div id="coupon">
+        <h3>Apply Coupon</h3>
+        <div>
+          <input type="text" placeholder="Enter Your Coupon" />
+          <button class="normal">Apply</button>
+        </div>
+      </div>
+
+      <div id="subtotal">
+        <h3>Cart Totals</h3>
+        <table>
+
+            <tr>
+                <td>Cart Subtotal</td>
+                <td>₹6799</td>
+            </tr>
+            <tr>
+                <td>Shipping</td>
+                <td>Free</td>
+            </tr>
+            <tr>
+                <td><strong>TOTAL</strong></td>
+                <td><strong>₹6799</strong></td>
+            </tr>
+        </div>
+    </table>
+    <button class="normal">Proceed to Payment</button>
+    </section>
+
+    <footer class="section-p1">
+      <div class="col">
+        <img src="img/logo.png" alt="cara logo" class="footer-brand-logo" />
+        <h4>contact</h4>
+        <p><strong>Address:</strong>2/145/1 OMR road,street 32,Chennai</p>
+        <p><strong>Phone:</strong>+91 6369144062</p>
+        <p><strong>Hours:</strong>10 AM to 9 PM, Mon-Sat</p>
+        <div class="follow">
+          <h4>Follow us</h4>
+          <div class="icon">
+            <ion-icon name="logo-instagram" class="social-logo"></ion-icon>
+            <ion-icon name="logo-linkedin" class="social-logo"></ion-icon>
+            <ion-icon name="logo-twitter" class="social-logo"></ion-icon>
+          </div>
+        </div>
+      </div>
+
+      <div class="col">
+        <h4>About</h4>
+        <a href="#">About us</a>
+        <a href="#">Delivery Information</a>
+        <a href="#">Privacy & Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Contact Us</a>
+      </div>
+      <div class="col">
+        <h4>My Account</h4>
+        <a href="#">Sign In</a>
+        <a href="#">View Cart</a>
+        <a href="#">My Wishlist</a>
+        <a href="#">Track My Order</a>
+        <a href="#">Help</a>
+      </div>
+      <div class="col install">
+        <h4>Install App</h4>
+        <p>From App Store or Google Play</p>
+        <div class="row">
+          <img src="img/pay/app.jpg" alt="Download From Apple Store Picture" />
+          <img src="img/pay/play.jpg" alt="Download From Play Store Picture" />
+        </div>
+        <p>Secured Payment Gateway</p>
+        <img src="img/pay/pay.png" alt="Different Payment Gateway Method" />
+      </div>
+
+      <div class="copyright">
+        <p>&copy; 2024,Tech2 etc - Html CSS Ecommerce Template</p>
+      </div>
+    </footer>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

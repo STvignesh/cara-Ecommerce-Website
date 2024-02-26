@@ -1,0 +1,132 @@
+#cartHeader {
+  background-image: url("img/about/banner.png");
+  width: 100%;
+  height: 40vh;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.4rem;
+}
+#cartHeader h2,
+#cartHeader p {
+  color: #fff;
+}
+#cart {
+  overflow-x: auto;
+}
+#cart table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+#cart table img {
+  width: 7rem;
+}
+#cart table td:nth-child(1) {
+  text-align: center;
+  width: 10rem;
+}
+
+#cart table td:nth-child(3) {
+  text-align: center;
+  width: 25rem;
+}
+#cart table td:nth-child(2),
+#cart table td:nth-child(4),
+#cart table td:nth-child(5),
+#cart table td:nth-child(6) {
+  text-align: center;
+  width: 15rem;
+}
+#cart table td:nth-child(5) input {
+  width: 7rem;
+  padding: 1rem 0.5rem 1rem 1.5rem;
+}
+#cart table thead {
+  border: 1px solid #e2e9e1;
+  border-left: none;
+  border-right: none;
+}
+#cart table thead td {
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  padding: 1.8rem 0;
+}
+.remove-icon {
+  width: 2rem;
+  height: 2rem;
+}
+#cart table tbody tr td {
+  padding-top: 1.5rem;
+}
+#cart table tbody td {
+  font-size: 1.3rem;
+}
+#cart-add {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+/* #subtotal tr {
+  display: flex;
+  flex-direction: column;
+} */
+#coupon {
+  width: 50%;
+  margin-bottom: 3rem;
+}
+#coupon h3,
+#subtotal h3 {
+  padding-bottom: 1.5rem;
+  font-size: 1.8rem;
+}
+#coupon input {
+  padding: 1rem 2rem;
+  outline: none;
+  width: 60%;
+  margin-right: 1rem;
+  border: 1px solid #e2e9e1;
+}
+#coupon button {
+  background-color: #088178;
+  color: #fff;
+  padding: 1.2rem 2rem;
+}
+#subtotal {
+  width: 50%;
+  margin-bottom: 3rem;
+  border: 1px solid #e2e9e1;
+  padding: 3rem;
+}
+#subtotal table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+#subtotal table td {
+  width: 50%;
+  border: 1px solid #e2e9e1;
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+#subtotal button {
+  background-color: #088178;
+  color: #fff;
+}
+
+@media (max-width: 29em) {
+  #cart-add {
+    flex-direction: column;
+  }
+  #coupon {
+    width: 100%;
+  }
+  #subtotal {
+    width: 100%;
+    padding: 2rem;
+  }
+}
