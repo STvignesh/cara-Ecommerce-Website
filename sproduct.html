@@ -7,6 +7,7 @@
     <title>Cara</title>
 
     <script defer src="script.js"></script>
+
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="page.css" />
   </head>
@@ -45,20 +46,22 @@
       </div>
 
       <div id="mobile">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="nav-icon"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
-          />
-        </svg>
+        <a href="cart.html">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="nav-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z"
+            />
+          </svg>
+        </a>
         <ion-icon name="menu-outline" class="mobile-nav-icon"></ion-icon>
       </div>
     </section>
@@ -115,18 +118,21 @@
       <div class="single-pro-details">
         <h6>Home/Shirt</h6>
         <h4>Men Shirt</h4>
-        <h2>₹1499</h2>
-        <select>
-          <option>Select Size</option>
-          <option>XXL</option>
-          <option>XL</option>
-          <option>L</option>
-          <option>M</option>
-          <option>S</option>
-          <option>XS</option>
-        </select>
-        <input type="number" value="1" min="1" />
-        <button class="normal">Add to cart</button>
+        <h2 class="product-price">₹1499</h2>
+        <form>
+          <select required>
+            <option>Select Size</option>
+            <option>XXL</option>
+            <option>XL</option>
+            <option>L</option>
+            <option>M</option>
+            <option>S</option>
+            <option>XS</option>
+          </select>
+          <p class="error">Please Choose the Product Size</p>
+          <input type="number" value="1" min="1" />
+          <button class="normal addToCartBtn">Add to cart</button>
+        </form>
         <h4>Product Details</h4>
         <p>
           The Gildan Ultra Cotton Shirt is made from a Substancial 6.0 oz.per
